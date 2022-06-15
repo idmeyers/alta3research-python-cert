@@ -17,7 +17,7 @@ def main():
     print("What is the end date? i.E. 2017-01-02")
     end_date = input()
 #create url from input
-    url = "https://api.nasa.gov/planetary/apod?api_key=mU3RPXkX6fMlmFNkMirrbauWTBfaPk02qs5wXgoP&start_date=" + start_date + "&end_date=" + end_date
+    url = "https://api.nasa.gov/planetary/apod?api_key=" + api_key +"&start_date=" + start_date + "&end_date=" + end_date
     print(url)      
     #get the data
     response = requests.get(url)
